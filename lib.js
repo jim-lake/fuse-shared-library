@@ -12,7 +12,7 @@ switch (platform) {
     require('fuse-shared-library-darwin/lib')
     break
   case 'darwin-arm':
-    console.log('-lfuse');
+    console.log('/usr/local/lib/libfuse.dylib');
     break
   case 'linux-arm':
     require('fuse-shared-library-linux-arm/lib')
